@@ -25,6 +25,28 @@
         "vanilla extract"
       ],
       "image": "peach-mango.svg"
+    },
+    {
+      "name": "Strawberry",
+      "calories": 620,
+      "type": "ice cream",
+      "ingredients": [
+        "fresh strawberries",
+        "sweet cream",
+        "vanilla extract"
+      ],
+      "image": "strawberry-sprinkle.svg"
+    },
+    {
+      "name": "Lime",
+      "calories": 480,
+      "type": "sorbet",
+      "ingredients": [
+        "fresh lemon juice",
+        "lime zest",
+        "lime juice"
+      ],
+      "image": "ice-cream-xtra1.svg"
     }
   ]
 }
