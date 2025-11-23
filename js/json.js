@@ -7,7 +7,7 @@ async function populate() {
 
     // Introducing JavaScript Object Notation (JSON): https://json.org/
     // STEP 4: Store the URL of a JSON file in a variable */
-    const requestURL =';
+    const requestURL ='https://adensarlat.github.io/Lab4-JS/js/i-scream.json';
 
     // STEP 5: Use the new URL to create a new request object
     const request = new Request(requestURL);
@@ -59,7 +59,7 @@ function showTopFlavors(jsonObj) {
 
         // STEP 10f: Set the textContent property for each of the above elements (except the UL), based on the JSON content
         h2.textContent = topFlavors[i].name;
-        img.setAttribute( + topFlavors[i].image);
+        img.setAttribute('src', 'https://adensarlat.github.io/Lab4-JS/images/' + topFlavors[i].image);
 
 
         // STEP 10g: Build a loop for the ingredients array in the JSON
