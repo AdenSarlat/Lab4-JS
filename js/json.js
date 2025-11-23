@@ -55,11 +55,18 @@ function showTopFlavors(jsonObj) {
         let article = document.createElement('article');
         let h2 = document.createElement('h2');
         let img = document.createElement('img');
+
+        let pType = document.createElement('p'); 
+        let pCalories = document.createElement('p');  //New elements for Calories and Type
+
         let ul = document.createElement('ul');
 
         // STEP 10f: Set the textContent property for each of the above elements (except the UL), based on the JSON content
         h2.textContent = topFlavors[i].name;
         img.setAttribute('src', 'https://adensarlat.github.io/Lab4-JS/images/' + topFlavors[i].image);
+
+         pType.textContent = 'Type: ' + topFlavors[i].type.toUpperCase(); 
+        pCalories.textContent = 'Calories (per serving): ' + topFlavors[i].calories;
 
 
         // STEP 10g: Build a loop for the ingredients array in the JSON

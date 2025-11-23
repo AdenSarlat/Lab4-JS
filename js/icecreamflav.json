@@ -1,30 +1,30 @@
 {
-  "companyName" : "Georigan Ice Cream!",
-  "headOffice" : "barrie ontario",
-  "established" : 2006,
-  "active" : true,
-  "topFlavors" : [
+  "companyName": "Georgian Ice Cream!",
+  "headOffice": "Barrie, Ontario",
+  "established": 2006,
+  "active": true,
+  "topFlavors": [
     {
-      "name" : " Mint",
-      "calories" : 700,
-      "type" : "ice cream",
-      "ingredients" : [
+      "name": "Mint",
+      "calories": 700,
+      "type": "ice cream",
+      "ingredients": [
         "chocolate chips",
         "peppermint cream",
         "vanilla extract"
       ],
-      "image" : "chocolate-mint.svg"
+      "image": "chocolate-mint.svg"
     },
     {
-      "name" : "Peach Mango",
-      "calories" : 560,
-      "type" : "sorbet",
-      "ingredients" : [
+      "name": "Peach Mango",
+      "calories": 560,
+      "type": "sorbet",
+      "ingredients": [
         "mango chunks",
         "peach drizzle",
         "vanilla extract"
       ],
-      "image" : "peach-mango.svg"
+      "image": "peach-mango.svg"
     }
-  ] 
+  ]
 }
