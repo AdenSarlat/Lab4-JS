@@ -68,7 +68,13 @@ function showTopFlavors(jsonObj) {
          pType.textContent = 'Type: ' + topFlavors[i].type.toUpperCase(); 
         pCalories.textContent = 'Calories (per serving): ' + topFlavors[i].calories;
 
-
+        //  Change bg color based on the type of ice cream or sorbet
+        if (topFlavors[i].type === 'sorbet') {
+            article.style.backgroundColor = '#E0FFFF'; //sorbet color
+        } else if (topFlavors[i].type === 'ice cream') {
+            article.style.backgroundColor = '#FFDAB9'; // color for ice cream
+        }
+        
         // STEP 10g: Build a loop for the ingredients array in the JSON
         let ingredients = topFlavors[i].ingredients;
         for (let j = 0; j < ingredients.length; j++) {
@@ -83,6 +89,10 @@ function showTopFlavors(jsonObj) {
         article.appendChild(img);
         article.appendChild(ul);
 
+        //  Append my 2 new elements
+        article.appendChild(pType); 
+        article.appendChild(pCalories); 
+     
         // STEP 10i: Append each complete ARTICLE element to the SECTION element
         section.appendChild(article);
     };
